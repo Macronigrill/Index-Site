@@ -1,0 +1,214 @@
+:root{
+    font-size: 16px;
+    --color-main: #9DCD5A;
+    --color-secondary: #68902B;
+    --color-accent: #7E7E7E;
+    --color-text: #000;
+    --text-faded: #555;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: monospace;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: #9DCD5A;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.Navbar h1 {
+    margin-left: 1rem;
+    margin-right: auto;
+    font-size: 2rem;
+}
+.NavbarLinks {
+    margin-right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.NavbarLinks a {
+    color: var(--text-faded);
+    transition: ease-in-out 0.2s;
+    opacity: 0.7;
+}
+.NavbarLinks .SelectedNavLink{
+    color: var(--color-text);
+    opacity: 1;   
+}
+.NavbarLinks a:hover{
+    color: var(--color-text);
+    opacity: 1;
+}
+.NavlinksDivider {
+    color: var(--text-faded);
+    opacity: 0.7;
+}
+
+.ContentSection{
+    background-image: url("./images/Background.jpg");
+    background-size: 100%;
+    overflow: hidden;
+}
+.MainContainer{
+    height: 95lvh;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: translate 300ms ease-in-out;
+}
+
+.AboutMe{
+    flex-shrink: 0;
+    width: 60%;
+    height: 60%;
+    padding-top: 4.5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+}
+.MainContentText {
+    width: 80%;
+}
+.MainContentText p {
+    margin-top: 1rem;
+}
+.MainContentLinks {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.MainContentLinks a{
+    background-color: #9DCD5A;
+    height: 2rem;
+    min-width: 2rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.1s;
+    gap: 0.3rem;
+}
+.MainContentLinks a:first-child {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.MainContentLinks a:hover{
+ background-color: var(--color-secondary);
+}
+.MainContentLink {
+    height: 2rem;
+}
+.githubIcon {
+    height: 100%;
+}
+.downloadIcon {
+    height: 70%;
+}
+.AboutMe .MainContentImage{
+    grid-row: span 2;
+}
+.AboutMe img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Resume{
+    flex-shrink: 0;
+    width: 80%;
+    height: 98%;
+    padding-top: 0.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.Resume .MainContentText {
+    margin-top: 10%;
+}
+.Resume .MainContentImage{
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    overflow: hidden;
+}
+.Resume .MainContentImage img{
+    height: 100%;
+}
+
+.Projects{
+    flex-shrink: 0;
+    width: 60%;
+    height: 80%;
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 1rem;
+    row-gap: 2rem;
+}
+.Projects .MainContentImage img {
+    width: 100%;
+}
+ul {
+    padding-left: 1.5rem;
+}
+.ProjectsHeader {
+    grid-column: 1/3;
+    text-align: center;
+}
+.Project {
+    grid-row: 2 / 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.Project .MainContentText {
+    font-size: 14px;
+}
+.Project div {
+    margin-bottom: 1rem;
+}
+.Project .MainContentImage {
+    overflow: hidden;
+}
+
+.Contact ul {
+    margin-top: 2rem;
+}
+.Contact li {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.down {
+    margin-top: auto;
+}
+.BorderLeft {
+    border-left: 1px solid var(--color-secondary);
+}
+.underline {
+    text-decoration: underline;
+}
+
+
